@@ -1,0 +1,54 @@
+:root{
+  --main-color: #FF2059;
+  --second-color: #D64C6F;
+  --black-color: #293033;
+  --black-two-color: #2A2F33;
+  --orange-color: #E17E58;
+  --white-color: #F8F9FB;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color:white;  
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+a{
+  color: var(--black-color);
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+.z1{
+  z-index: 1;
+}
+button, input{
+  border: none;
+  outline: none;
+}
+.logo{
+  font-size: 1.2rem;
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+}
+.logo > svg {
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
+  color: var(--second-color);
+  transform: rotate(10deg);
+}
+.logo > span{
+  font-size: 2rem;
+  font-weight: bold;
+}

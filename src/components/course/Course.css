@@ -1,0 +1,140 @@
+.course #title{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.course .Slider{
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.course  .Arrows{
+    text-align: center;
+    transition: 0.2s;
+}
+.course .Arrows svg{
+    width: 30px;
+    height: fit-content;
+    margin: 10px;
+    color:rgba(0, 0, 0, 0.603);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.course .Arrows svg:hover{
+    color:rgba(0, 0, 0, 0.993);
+}
+.course .Slider .Card{
+    background-color: white;
+    border-radius: 10px;
+    width: 240px;
+    height: 330px;
+    overflow: hidden;
+    transition: 0.2s;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.096);
+    cursor: pointer;
+    margin: 20px;
+}
+.course .Slider .Card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.096);
+}
+.course .Slider .Card .title{
+    padding: 10px;
+}
+.course .Slider .Card .title p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 0;
+}
+.course .Slider .Card #background{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.course .Slider .Card .rating{
+    position: absolute;
+    left: 0px;
+    top:140px;
+
+    background-color:white;
+    display: flex;
+    padding: 8px 9px;
+    border-radius:0 20px 20px 0px;
+    
+    
+}
+.course .Slider .Card .rating #star{
+    color:rgb(218, 106, 32);
+    margin: 0px -2px ;
+    margin-right: 2px;
+}
+.course .Slider .Card .details {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+}
+.course .Slider .Card .details .Author #name{
+    position: relative;
+    display: inline;
+    left: 4px;
+    top: -8px;
+    color:rgba(0, 0, 0, 0.548);
+}
+.course .Slider .Card .details .Author #avatar{
+    position: relative;
+    width: 29px;
+    height: 29px;
+    border-radius:50%;
+}
+.course .Slider .Card .details .Price #before{
+    margin-right: 9px;
+    text-decoration: line-through;
+    color:rgba(0, 0, 0, 0.582);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.course .Slider .Card .details .Price #after{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(230, 82, 38);
+    font-weight: 400;
+}
+.course .Slider .Card .Views{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(0, 0, 0, 0.212);
+}
+.course .Slider .Card .Views div {
+    color:rgba(0, 0, 0, 0.438);
+    
+}
+.course .Slider .Card .Views div span{
+    display: inline;
+}
+.course .Slider .Card .Views div svg{
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    position: relative;
+    top: 4px;
+}

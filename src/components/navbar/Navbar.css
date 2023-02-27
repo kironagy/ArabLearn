@@ -1,0 +1,121 @@
+.navbar{
+   background-color: var(--white-color);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 25px 0;
+   box-shadow: 0 0 5px #00000033;
+   z-index: 99999;
+}
+.navbar .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0;
+}
+.navbar .mob{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-grow: 2;
+}
+.navbar .links{
+   flex-grow: 3;
+
+}
+.navbar .links ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.navbar .links ul li{
+   margin-right: 50px;
+}
+.navbar .links ul li a{
+   font-size: 1.1rem;
+   font-size: 400;
+   color: var(--black-color);
+   transition: 0.3s ease-in-out;
+}
+.navbar .links ul li a:hover{
+   color: var(--main-color);
+}
+.navbar .reg{
+   flex-grow: 1;
+}
+.navbar .reg a{
+   background-color: var(--main-color);
+   color: #fff;
+   display: inline-block;
+   padding: 10px 35px;
+   border-radius: 7px;
+   cursor: pointer;
+}
+.bars svg{
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   padding: 5px 0;
+   display: none;
+}
+.navbar .close{
+   width: 100%;
+   margin-left: 100px;
+   margin-top: 40px;
+   padding: 10px;
+   cursor: pointer;
+   display: none;
+}
+.navbar .close > svg{
+   width: 20px;
+   height: 20px;
+}
+@media (max-width: 768px) {
+   .bars svg{
+      display: inline-block;
+   }
+   .navbar .mob{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: var(--white-color);
+      flex-direction: column;
+      z-index: 9999;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+   }
+   .navbar .mob.active{
+      transform: translateX(0);
+   }
+   .navbar .mob .links{
+      width: 100%;
+      flex-grow: 0;
+   }
+   .navbar .mob .links ul{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 60px;
+   }
+   .navbar .mob .links ul li,
+   .navbar .mob .links ul li a{
+      text-align: center;
+      margin-bottom: 15px;
+      margin-right: 0;
+   }
+   .navbar .mob .links ul li a{
+      padding: 10px 20px;
+   }
+   .navbar .reg{
+      margin-top: 15px;
+   }
+   .navbar .close{
+      display: block;
+   }
+}
